@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Vashist Lalla" />
+	<title>Perks of Being a Wallflower - Merchandise</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Perks of being a wallflower</h1>
+				<nav>
+					<ul id="horizontal">
+						<li><a href="index.html">Home page</a></li>
+						<li><a href="PlotSummary.html">Details</a></li>
+						<li><a href="Cast.html">Cast</a></li>
+						<li><a href="Trailer&Clips.html">Trailer & Clips</a></li>
+						<li><a href="Quotes.html">Quotes</a></li>
+						<li><a href="Photos.html">Photos</a></li>
+						<li><a href="Ratings&Reviews.html">Reviews and Ratings</a></li>
+						<li><a href="Merchandise.html">Merchandise</a></li>
+					</ul>
+				</nav>
+		</header><!-- End of header -->
+		<br />
+		<div id="merchandise">
+			<h1>Merchandise</h1>
+			<form action="Checkout.html"
+			method="get">
+				<input type="checkbox" id="infiniteShirt" name="merchandise" class="merch">
+				<label for="infiniteShirt" class="images"><img src="css/media/images/Infinite.jpg">Infinite Shirt-R250.00</label>
+				<br />
+				<input type="checkbox" id="psychosShirt" name="merchandise" class="merch">
+				<label for="psychosShirt" class="images"><img src="css/media/images/Psychos.jpg">Psychos Shirt-R250.00</label>
+				<br />
+				<input type="checkbox" id="charlieShirt" name="merchandise" class="merch">
+				<label for="charlieShirt" class="images"><img src="css/media/images/LoveCharlie.jpg">Love Charlie Shirt-R250.00</label>
+				<br />
+				<br />
+				<input type="submit" name="checkout" value="Checkout" id="checkout"/>
+			</form>
+			
+		</div><!-- end of content -->
+	</div><!-- end of container -->
+	<script type="text/javascript">
+		var button = document.getElementById('checkout');
+		button.onclick = function () {
+			var checkBoxes = document.getElementsByClassName( 'merch' );
+			var isChecked = false;
+    		for (var i = 0; i < checkBoxes.length; i++) {
+        		if ( checkBoxes[i].checked ) {
+            			isChecked = true;
+        				};
+    				};
+    				if ( isChecked ) {
+        				return true;
+        			} else {
+           				alert( 'Please, check at least one checkbox!' );
+           				return false;
+        			}   
+			}
+	</script>
+</body>
+</html>

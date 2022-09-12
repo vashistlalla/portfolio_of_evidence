@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Vashist Lalla" />
+	<title>Perks of Being a Wallflower - Checkout Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+	<div class="container">
+		<div id="Checkout">
+			<h1>Checkout Page</h1>
+			<form
+				action="Results.html"
+				method="post">
+				<fieldset>
+					<label>Email: <br />
+						<input type="email" id="emailField" name="emailField" placeholder="johndoe@gmail.com" />
+					</label>
+					<span id="emailMessage"></span>
+					<br />
+					<label>Size Of Merchandise: <br />
+						<select name="sizes" id="sizeField" name="sizeField">
+							<option value="null"> </option>
+							<option value="extra extra small">XXS</option>
+							<option value="extra small">XS</option>
+							<option value="small">S</option>
+							<option value="medium">M</option>
+							<option value="large">L</option>
+							<option value="extra large">XL</option>
+							<option value="extra extra large">XXL</option>
+						</select>
+					</label>
+					<span id="sizeMessage"></span>
+					<br />
+					<label>Name As Seen On Debit/Credit Card: <br />
+						<input type="text" id="nameField" name="nameField" placeholder="MR J DOE" />
+					</label>
+					<span id="nameMessage"></span>
+					<br />
+					<label>Card Number: <br />
+						<input type="number" id="cardNumberField" name="cardNumberField"/>
+					</label>
+					<span id="cardMessage"></span>
+					<br />
+					<label>CVV: <br />
+						<input type="number" id="cvvNumberField" max="999" name="cvvNumberField"/>
+					</label>
+					<span id="cvvMessage"></span>
+					<br />
+					<label><br />
+						<input type="submit" id="buttonField" name="buttonField" value="Checkout" />
+					</label>
+					<span id="buttonMessage"></span>
+				</fieldset>
+			</form>
+			<br />
+			<a href="Merchandise.html">Back To Merchandise Page</a>
+		</div>
+	</div><!-- end of container -->
+	<script src="validation.js"></script>
+</body>
+</html>

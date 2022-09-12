@@ -1,0 +1,158 @@
+/*using a typewriter font for the headings just like the creators 
+used for the movie to give the website the same feel as the movie 
+and use a handwriting type of font for the rest of the body, 
+because the movie takes place through the main character's journal */
+@font-face {
+	font-family: 'typewriter';
+	src: url('Fonts/TravelingTypewriter.otf') format('OpenType');
+}
+@font-face {
+    font-family: 'handwriting';
+    src: url('Fonts/GirlsHaveManySecrets.ttf') format('TrueType');
+}
+body{
+	background-image: url('media/images/Background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	padding: 10px
+}
+div {
+	padding: inherit;
+	margin-bottom: 20px;
+}
+:root {
+	--mainColor: #9ACD32;
+}
+h1 {
+	font-family: typewriter, Georgia, serif;
+}
+a {
+	font-family: handwriting, Arial, sans-serif;
+	font-size: 25px;
+	background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .2s;
+}
+p {
+	font-family: handwriting, Arial, sans-serif;
+	font-size: 25px;
+}
+li {
+	font-family: handwriting, Arial, sans-serif;
+	font-size: 25px;
+}
+a:hover {
+	background-size: 4px 50px;
+}
+nav>ul {
+	list-style-type: none;
+}
+.container {
+	background-image: url('media/images/pageTexture.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border: thick solid black;
+	margin: 10px auto 10px auto;
+}
+ul#horizontal li {
+	display: inline;
+	padding: 20px;
+}
+header {
+	text-align: center;
+}
+#photos img {
+	margin-left: 150px;
+	margin-bottom: 10px;
+	border: thick solid #9ACD32;
+}
+#cast img {
+	width: 360px;
+	height: 240px;
+	display: block;
+	border: thick solid black;
+}
+iframe {
+	margin-left: 280px;
+}
+video {
+	margin-left: 280px;
+}
+table {
+	font-family: handwriting, Arial, sans-serif;
+	font-size: 25px;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 7px 10px 10px 10px;
+}
+th {
+	border-bottom: 2px solid black;
+}
+td {
+	border-right: 2px solid black;
+}
+tr.even {
+	background-color: rgb(121, 123, 127);
+}
+.images {
+	font-family: handwriting, Arial, sans-serif;
+	font-size: 25px;
+	margin: 50px;
+}
+span {
+	color: red;
+}
+@media screen and (max-width: 600px)
+{
+	input.merch {
+		margin: 100px;
+	}
+}
+@media screen and (min-width: 768px)
+{
+	input.merch {
+		margin: 100px;
+	}
+}
+@media screen and (min-width: 992px)
+{
+	input.merch {
+		margin: 100px;
+	}
+}
+@media screen and (max-device-height: 812px)
+{
+	body {
+		background-size: 1536px 2732px;;
+	}
+}
+form {
+	font-family: handwriting, Arial, sans-serif;
+	font-size: 25px;
+}
+#merchandise input#checkout {
+	font-size: 20px;
+	color: #444444;
+	text-shadow: 0px 1px 1px #ffffff;
+	border-bottom: 2px solid #b2b2b2;
+	background-color: #9ACD32;
+}
+#merchandise input#checkout:hover {
+	color: #333333;
+	border: 1px solid #a4a4a4;
+	border-top: 2px solid #b2b2b2;
+	background-color: #a0dbc4;
+}
+#Checkout input {
+	border-radius: 5px;
+}
