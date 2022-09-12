@@ -30,12 +30,18 @@ In my honours year, I was put in a group tasked with making a web application th
 
 you will need to install the libraries as such to run the python script:
 
+install spaCy:
 ```powershell
-#installs spaCy
 pip install -U pip setuptools wheel
+```
+```powershell
 pip install -U spacy
+```
+```powershell
 python -m spacy download en_core_web_lg
-
+```
+install pdfminer:
+```powershell
 #installs pdfminer
 pip install pdfminer
 ```
