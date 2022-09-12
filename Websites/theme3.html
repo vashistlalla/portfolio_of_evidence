@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Theme 3</title>
+	   <style type="text/css">
+
+        body
+        {
+            background-color: #000000;
+            overflow: hidden; /* Hide scrollbars */
+        }
+        video 
+        {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            height: 100%; min-height: 100%; 
+            width:100%; min-width: 100%;
+        }
+        video:focus
+        {
+            outline: none;
+        }
+
+        #play
+        {
+            position: fixed;
+            left: 45%;
+            top: 50%;
+            border-radius: 30%;
+            font-size: 25pt;
+              border: none;
+             padding: 15px;
+             padding-left: 20px;
+             padding-right: 15px;
+             transition-duration: 0.2s;
+             transform-origin: center;
+
+        }
+        #play:hover
+        {
+            cursor: pointer;
+            color: #15191a;
+            padding: 15px;
+            padding-left: 23px;
+        }
+
+        a
+        {
+            font-size: 15pt;
+
+        }
+
+        a:active
+        {
+            color: white;
+        }
+
+                a:visited
+        {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+	<a href="index.html#7">Back</i></a>
+	<video id="vid" playsinline >
+      <source src="video/lyricVideo.mp4" type="video/mp4">
+      <!-- <source src="movie.ogg" type="video/ogg"> -->
+    </video>
+    <button id = "play" onclick="playVid()" type="button">Play</button>
+</body>
+<script>
+            var vid = document.getElementById("vid"); 
+
+        function playVid() 
+        { 
+          vid.play(); 
+          vid.requestFullscreen();
+          document.getElementById("play").style.visibility = 'hidden'; 
+        } 
+    </script>
+</html>

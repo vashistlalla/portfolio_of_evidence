@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Theme 4</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" href="css/docSlider.css" />
+	<link rel="stylesheet" href="css/scrollCue.css" />
+</head>
+<body>
+	<div class="docSlider">
+		<section id="1">
+			<div data-rellax-speed="17" id="titleScreen">
+				<!-- <h1 data-rellax-speed="17" id="firstRev">Hi</h1>
+				<h1 data-rellax-speed="17" id="secondRev">my name is</h1>
+				<h1 data-rellax-speed="17" id="thirdRev">Vashist</h1> -->
+				<h1 data-duration="2000" data-order="1" data-cue="slideInUp">Hi</h1>
+				<h1 data-duration="2000" data-delay="2000" data-order="2" data-cue="slideInUp">my name is</h1>
+				<h1  data-duration="2000" data-delay="4000" data-order="3" data-cue="slideInUp">Vashist</h1>
+				<br/>
+				<br />
+				<h3 >
+					<span data-duration="550" data-delay="6000" data-cue="fadeIn" data-order="1">And I</span>
+					<span data-duration="550" data-delay="6000" data-cue="fadeIn" data-order="2">am</span>
+					<span data-duration="550" data-delay="6000" data-cue="fadeIn" data-order="3">here</span>
+					<span data-duration="550" data-delay="6000" data-cue="fadeIn" data-order="4">to</span>
+					<span data-duration="550" data-delay="6000" data-cue="fadeIn" data-order="5">tell</span>
+					<span data-duration="550" data-delay="6000" data-cue="fadeIn" data-order="6">you</span>
+					<span data-duration="550" data-delay="6000" data-cue="fadeIn" data-order="7">about</span>
+					<span data-duration="550" data-delay="6000" data-cue="fadeIn" data-order="8">me</span>
+				</h3>
+			</div>
+		</section>
+		<section  id="2">
+			<h3 id="movieInstruction" onclick="movie()">what I am a huge fan of?</h3>
+			<img src="images/filmStrip.svg" id="filmStrip">
+			<h3 id="movie">Movies!<h3>
+			<h3 id="musicInstruction" onclick="music()">what is my favourite music genre?</h3>
+			<img src="images/musicNotes.svg" id="musicNotesLeft">
+			<img src="images/musicNotes.svg" id="musicNotesRight">
+			<h3 id="music">Rap</h3>
+			<h3 style="opacity: 0" id="clickMe"><br/><br/>Click the answer if you want to see how I implemented rap into my project!</h3>
+			<h3 id="stickyNoteDescription">I have a hard time describing my personality and a solution to the problem was to ask a few friends of mine to describe me on the next page!</h3>
+		</section>
+		<section  id="3">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+    				<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+    				<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+    				<li data-target="#carouselExampleControls" data-slide-to="2"></li>
+    				<li data-target="#carouselExampleControls" data-slide-to="3"></li>
+    				<li data-target="#carouselExampleControls" data-slide-to="4"></li>
+    				<li data-target="#carouselExampleControls" data-slide-to="5"></li>
+    				<li data-target="#carouselExampleControls" data-slide-to="6"></li>
+    				<li data-target="#carouselExampleControls" data-slide-to="7"></li>
+    				<li data-target="#carouselExampleControls" data-slide-to="8"></li>
+    				<li data-target="#carouselExampleControls" data-slide-to="9"></li>
+
+  				</ol>
+	  			<div class="carousel-inner">
+	  				<div class="carousel-item active">
+	    				<h3 class="mx-auto">Did I forget to mention the Harry Potter movies are one of my favourites? Click the sticky note for some magic!</h3>
+	      				<img data-tilt class="d-block mx-auto" src="images/note8.png" alt="Eight slide" onclick="vanish()" id="HP">
+	      				
+	    			</div>
+	    			<div class="carousel-item">
+	    						<img data-tilt class="d-block mx-auto" src="images/note1.png" alt="First slide">
+	    			</div>
+	    			<div class="carousel-item">
+	      				<img data-tilt class="d-block mx-auto" src="images/note2.png" alt="Second slide"> 
+	    			</div>
+	    			<div class="carousel-item">
+	      				<img data-tilt class="d-block mx-auto" src="images/note3.png" alt="Third slide">
+	    			</div>
+	    			<div class="carousel-item">
+	      				<img data-tilt class="d-block mx-auto" src="images/note4.png" alt="Fourth slide">
+	    			</div>
+	    			<div class="carousel-item">
+	      				<img data-tilt class="d-block mx-auto" src="images/note5.png" alt="Fifth slide">
+	    			</div>
+	    			<div class="carousel-item">
+	      				<img data-tilt class="d-block mx-auto" src="images/note6.png" alt="Sixth slide">
+	    			</div>
+	    			<div class="carousel-item">
+	      				<img data-tilt class="d-block mx-auto" src="images/note7.png" alt="Seventh slide">
+	    			</div>
+	    			
+	    			<div class="carousel-item">
+	      				<img data-tilt class="d-block mx-auto" src="images/note9.png" alt="Ninth slide">
+	    			</div>
+	    			<div class="carousel-item">
+	      				<img data-tilt class="d-block mx-auto" src="images/note10.png" alt="Tenth slide">
+	    			</div>
+	  			</div>
+	  			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+	    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    			<span class="sr-only">Previous</span>
+	  			</a>
+	  			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+	   				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    			<span class="sr-only">Next</span>
+	  			</a>
+		</div>
+		</section>
+		<section id="4">
+			<div class="leftSide">
+				<h4 class="wrapper" id="rationale1Text">I chose black and white to keep with the theme of of the 1970s when serial killers were at large. when I think of an agent, I think james bond, mission impossible etc. So i incorporated the cliche spy stereotypes like the james bond gun barrel sequence. the intense training exercises, the fancy spy music, the mission impossible ceiling drop sequence and the classic spy suit. I had black lining to outline the objects and I had minimal curves to replicate the style of cartoons back in the 20th century.</h4>
+				<div class="box" id="liquid1">
+					<img src="images/filmCamera.png">
+				</div>
+			</div>
+			<div class="rightSide">
+				
+				<div class="box" id="liquid2">
+					<img src="images/filmCamera.png">
+				</div>
+				<h4 class="wrapper" id="theme1Info">Movies are a big part of my life and I was not going to let this module go without implementing my passion for movies and creativity through one of the themes. Movies are my escape from this world and I hope to one day create something that helps others escape reality for just a moment or two. I hope you enjoy my James Bond'esque theme!</h4>
+			</div>
+			<div class="middle" >
+				<img src="images/theme1Preview.png" id="theme1Prev">
+				<img src="images/rationaleTheme2Button.svg" id="theme1Rationale" onclick="leftSideIcon();">
+			</div>
+
+			
+			
+		</section>
+		<section id="5">
+			<img src="images/Theme1Button.svg" id="theme1Button">
+		</section>
+		<section id="6">
+			<h3>I challenged myself in theme 2 with the use of</h3>
+			<canvas width="800" height="320"></canvas>
+			<h4 id="rationaleText"><img src="images/theme2Preview.png" id="theme2Preview">I chose this particular infographic because, out of the three infographics I chose, this one had the most substance in terms of useful information. For this project I tried using my limited knowledge of javascript to create a minimalistic styled interactive design. I have always been a fan of the minimalistic style because it does not overwhelm me as much as other styles do. I mainly have clicking interactive pieces because, I tried keeping it as user friendly as possible and not too complicated. This is very different from my first project. my first project had a lot of different animations made within adobe animate and a lot of sound effects. For this project, i tried keeping it simple and used only background jazz music to fit the "L.A. Noir" and "The Jazz Detective" theme.</h4>
+			<img src="images/Theme2Button.svg" id="theme2Button">
+		</section>
+		<section id="7">
+			<div class="rw-wrapper">
+				<span class="anim-follows">For theme 3 I wanted to <strong>EXPRESS</strong> myself</span>
+				<div class="rw-words rw-words-1">
+					<span>passionatly</span>
+					<span>tremendously</span>
+					<span>respectfully</span>
+					<span>kinectally</span>
+				</div>
+			</div>
+			<h4 id="rationale3Text"><img src="images/theme3Preview.png" id="theme3Preview"><img src="images/smile.svg" id="smile">I chose this song because it means a lot to me and it gave me the motivation to do better because i was passionate about the song. The song is very slow and descriptive which gave me a lot of opportunities to explore different kinetic animations such as masking and transforming shapes into other figures. The song is about stress and the more the song progresses, the more the pace of his words increases and to show the stress and anxiety in his words, I tried putting as much lyrics on one screen as possible to show the pressure put on his emotions. I chose black and white as the main colours because the rapper's theme is very sad and real to his emotions and he always paints a "black and white" picture with his songs so I thought I would respect that tone through the video.</h4>
+			<h3 id="songDes"style="opacity: 0"><br><br><br>The song you just heard is by the artist in the lyric video by the way!</h3>
+			<img src="images/theme3Button.svg" id="theme3Button">
+		</section>
+		<section  id="8">
+			<h4 id="thankYou"><br><br>Thank you for taking the time to scroll through what is essentially me in a nutshell. I try to embark on new challenges as much as possible and this module was the biggest challenge I have ever put myself through. I never did art or design in high school and when everyone heard I was doing this module, they laughed and I am just happy to get this far and grateful that you took the time to read through it!
+		</section>
+	</div>
+
+
+
+	<script type="text/javascript" src="script/rellax.js"></script>
+	
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="script/docSlider.js"></script>
+	<script src="script/scrollCue.min.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+	<script type="text/javascript">
+		var rellax = new Rellax('.rellax');
+		docSlider.init();
+		scrollCue.init();
+	</script>
+	<script src="script/tilt.jquery.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	
+	
+
+
+
+</body>
+</html>

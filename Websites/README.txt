@@ -1,0 +1,1 @@
+the project needs to be viewed on a 1920 x 1080 resolution

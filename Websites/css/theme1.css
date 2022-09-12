@@ -1,0 +1,331 @@
+body {
+	height: 1080px;
+	width: 1920px;
+	margin: 0;
+	overflow: hidden;
+}
+
+#background1 {
+	position: relative;
+	width:1920px;
+	height: 1080px;
+	z-index: -1;
+}
+
+#arrow {
+	position: relative;
+	height: 100px;
+	bottom:3500px;
+	left: -800px;
+	animation-name: arrow;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+#arrow2 {
+	position: relative;
+	height: 100px;
+	bottom:1750px;
+	left: 1350px;
+	opacity: 0;
+	animation-name: arrow2;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+#arrow3 {
+	position: relative;
+	height: 100px;
+	bottom:1850px;
+	left: 600px;
+	opacity: 0;
+	animation-name: arrow2;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#arrow4 {
+	position: relative;
+	height: 100px;
+	bottom: 900px;
+	left: -100px;
+	opacity: 0;
+}
+
+#c {
+	position: relative;
+	left: 1090px;
+	top: 210px;
+	width: 220px;
+	height: 40px;
+	z-index: 0;
+}
+#TV {
+	position: relative;
+	left: 1050px;
+	bottom: 1500px;
+	width:300px;
+	height:500px;
+	z-index: 1;
+	animation-name: tvEnhanced;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+#Character {
+	z-index: 0;
+	position: relative;
+	height: 1080px;
+	right: 800px;
+	bottom: 1090px;
+	animation-name: moveToScene2;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+#BookShelf {
+	z-index: 0;
+	position: relative;
+	height: 600px;
+	width: 500px;
+	left: 1100px;
+	bottom: 1300px;
+	animation-name: moveToScene2;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+#one {
+	z-index: 0;
+	position: relative;
+	height: 50px;
+	right: 1300px;
+	bottom: 2000px;	
+	animation-name: drip;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#two {
+	z-index: 0;
+	position: relative;
+	height: 50px;
+	right: 1300px;
+	bottom: 2100px;	
+	animation-name: drip;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#Contract {
+	z-index: 0;
+	height: 1080px;
+	position: relative;
+	left: 600px;
+	bottom: 1100px;
+	transform: scale(0.1,0.1);
+	animation-name: contractEnhanced;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+#signUp {
+	z-index: 1;
+	position: relative;
+	width: 500px;
+	bottom: 1100px;
+	left: 0px;
+	opacity: 0;
+	animation-name: signUpEnhanced;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+}
+
+#sig {
+	z-index: 1;
+	position: relative;
+	width: 100px;
+	bottom: 1100px;
+	left: -300px;
+	opacity: 0;
+	animation-name: sigEnhanced;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+
+#pushUp {
+	position: relative;
+	left: -900px;
+	bottom: 500px;
+	opacity: 0;
+	animation-name: pushUpTransition;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+#pushUp2 {
+	position: relative;
+	left: -1800px;
+	bottom: 700px;
+	opacity: 0;
+	animation-name: pushUpTransition;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+#pushUp3 {
+	position: relative;
+	left: -2700px;
+	bottom: 900px;
+	opacity: 0;
+	animation-name: pushUpTransition;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+#curl1 {
+	position: relative;
+	left: -1000px;
+	bottom: 1200px;
+	opacity: 0;
+	animation-name: curlTransition;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+
+}
+
+#background3 {
+	position: relative;
+	height: 1080px;
+	left: 500px;
+	bottom: 1100px;
+	transform: scale(0, 0);
+	animation-name: scaleTarget;
+	animation-duration: 3s;
+	animation-delay: 8s;
+	animation-fill-mode: forwards;
+}
+
+#drop {
+	position: relative;
+	height: 500px;
+	bottom: 800px;
+	left: 700px;
+	opacity: 0;
+	transform: scale(2,2);
+	animation-name: zipDown;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+#suit {
+	position: relative;
+	opacity: 0;
+	top: -800px;
+	height: 500px;
+	left: 500px;
+	z-index: 1;
+	animation-name: suitFadeIn;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+#tie {
+	position: relative;
+	left: 275px;
+	height: 300px;
+	bottom: 1000px;
+	z-index: 0; 
+	animation-name: suitUp;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+#agent {
+	position: relative;
+	height: 500px;
+	bottom: 1100px;
+	left: 1620px;
+	opacity: 0;
+	animation-name: logo;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes drip {
+	from {transform: translateY(0px);}
+	to { transform: translateY(100px);}
+}
+
+@keyframes moveToScene2 {
+	from {transform: translateX(0px);}
+	to {transform: translateX(-3000px);}
+}
+
+@keyframes tvEnhanced {
+	25% {
+		transform: translate(-400px, -100px);
+	}
+	100% {
+		transform: scale(2.0);
+	}
+}
+
+@keyframes contractEnhanced {
+	0% {transform: scale(0,0);
+	 opacity: 0;}
+	100% {transform: scale(1,1);
+	 opacity: 1;}
+}
+
+@keyframes signUpEnhanced {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes sigEnhanced {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes pushUpTransition {
+	from {transform: translateX(0px); opacity: 0;}
+	to {transform: translateX(1900px); opacity: 1;}
+}
+@keyframes curlTransition {
+	from {transform: translateX(0px); opacity: 0;}
+	to {transform: translateX(1900px); opacity: 1;}
+}
+@keyframes arrow {
+	from {transform: translateX(0px);}
+	to { transform: translateX(50px);}
+}
+@keyframes arrow2 {
+	from {transform: translateX(0px);}
+	to { transform: translateX(-50px);}
+}
+@keyframes scaleTarget {
+	0% {transform: scale(0.0);}
+	100% {transform: scale(1.0);}
+}
+@keyframes zipDown {
+	0% {transform: scale(2,2);}
+	100% {transform: scale(0.5,0.5);}
+}
+@keyframes zipUp {
+	0% {transform: scale(0.5,0.5);}
+	100% {transform: scale(2,2);}
+}
+@keyframes suitUp {
+	0% {opacity: 0;}
+	25%{opacity: 1; transform: rotate(-15deg);}
+	50%{transform: rotate(15deg);}
+	75%{transform: rotate(-15deg);}
+	100%{transform: rotate(0deg); opacity: 1;}
+}
+@keyframes logo {
+	from {transform: translateX(0px);}
+	to {transform: translateX(-1500px);}
+}
+@keyframes suitFadeIn {
+	from {opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes suitFadeOut {
+	from {opacity: 1;}
+	to{opacity: 0;}
+}

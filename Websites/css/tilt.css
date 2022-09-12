@@ -1,0 +1,113 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  margin: 5rem;
+
+  -webkit-transform-style: preserve-3d;
+
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(100rem);
+          transform: perspective(100rem);
+
+  cursor: pointer;
+}
+
+.container {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 30rem;
+  height: 36rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  -webkit-transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+          transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("images/StickyNote1.JPG");
+  background-position: var(--bX) var(--bY);
+  background-size: 60rem auto;
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+
+  transition: -webkit-transform .6s 1s;
+
+  transition: transform .6s 1s;
+
+  transition: transform .6s 1s, -webkit-transform .6s 1s;
+}
+
+.container::before,
+.container::after {
+  content: "";
+
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #fff;
+
+  position: absolute;
+  z-index: 2;
+
+  opacity: .3;
+  transition: .3s;
+}
+
+.container::before {
+  top: 2rem;
+  right: 2rem;
+
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+.container::after {
+  bottom: 2rem;
+  left: 2rem;
+
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.container--active {
+  transition: none;
+}
+
+.container--2 {
+  -webkit-filter: hue-rotate(80deg) saturate(140%);
+          filter: hue-rotate(80deg) saturate(140%);
+}
+
+.container--3 {
+  -webkit-filter: hue-rotate(160deg) saturate(140%);
+          filter: hue-rotate(160deg) saturate(140%);
+}
+
+.container p {
+  color: hsla(0, 0%, 100%, .6);
+  font-size: 2.2rem;
+}
+
+.wrap:hover .container::before,
+.wrap:hover .container::after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+}
