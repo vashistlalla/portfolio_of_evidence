@@ -70,10 +70,15 @@ function vanish() {
 	document.getElementById("HP").classList.toggle("vanishOut");
 }
 var audio = new Audio('audio/filmStrip.mp3');
+audio.volume = 0.4;
 var audio2 = new Audio('audio/hipHop.mp3');
+audio2.volume = 0.4;
 var audioTheme1 = new Audio('audio/theme1Music.mp3');
+audioTheme1.volume = 0.4;
 var audio3 = new Audio('audio/music.mp3');
+audio3.volume = 0.4;
 var audio4 = new Audio('audio/mainSong.mp3');
+audio4.volume = 0.4;
 var inter = 0;
 function movie() {
     
